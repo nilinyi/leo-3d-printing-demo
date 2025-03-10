@@ -27,13 +27,13 @@ controls.dampingFactor = 0.05;
 //////////////////////////////////////////////////////////////////
 // Lighting Setup
 //////////////////////////////////////////////////////////////////
-const ambientLight = new THREE.AmbientLight(0xffffff, 2);
+const ambientLight = new THREE.AmbientLight(0xffffff, 4.5);
 scene.add(ambientLight);
 
-const directionalLight = new THREE.DirectionalLight(0xffffff, 5.0);
-directionalLight.position.set(0, 5, 5);
-directionalLight.castShadow = true;
-scene.add(directionalLight);
+// const directionalLight = new THREE.DirectionalLight(0xffffff, 5.0);
+// directionalLight.position.set(0, 5, 5);
+// directionalLight.castShadow = true;
+// scene.add(directionalLight);
 
 //////////////////////////////////////////////////////////////////
 // Reflection Lights ("dots") with increased intensity
@@ -163,7 +163,7 @@ const paintingMaterial = new THREE.MeshPhysicalMaterial({
     opacity: 1.0
 });
 const painting = new THREE.Mesh(paintingGeometry, paintingMaterial);
-painting.position.set(0, 0, -1 + 0.05 + paintingThickness / 2);
+painting.position.set(1.2, 0.8, -1 + 0.2 + paintingThickness / 2);
 scene.add(painting);
 
 //////////////////////////////////////////////////////////////////
