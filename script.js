@@ -133,7 +133,7 @@ scene.add(fillLight);
 const wallGeometry = new THREE.PlaneGeometry(10, 6);
 const textureLoader = new THREE.TextureLoader();
 const wallTexture = textureLoader.load(
-    'http://127.0.0.1:8080/3d-rendering-minimalist-interior-with-copy-space.jpg'
+    './3d-rendering-minimalist-interior-with-copy-space.jpg'
 );
 const wallMaterial = new THREE.MeshBasicMaterial({ map: wallTexture });
 const wall = new THREE.Mesh(wallGeometry, wallMaterial);
